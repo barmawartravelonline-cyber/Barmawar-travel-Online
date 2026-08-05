@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FDFCF7;
+    color: #2C2621;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Artistic Flair Theme Utilities */
+.bg-artistic-canvas {
+  background-color: #FDFCF7;
+}
+
+.bg-artistic-card {
+  background-color: #F9F6F1;
+}
+
+.bg-artistic-accent {
+  background-color: #F5EFE6;
+}
+
+.bg-artistic-dark {
+  background-color: #2C2621;
+}
+
+.text-artistic-espresso {
+  color: #2C2621;
+}
+
+.text-artistic-copper {
+  color: #C08C5D;
+}
+
+.border-artistic-sand {
+  border-color: #E8E2D9;
+}
+
+/* Printable Ticket styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-ticket, .printable-ticket * {
+    visibility: visible;
+  }
+  .printable-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

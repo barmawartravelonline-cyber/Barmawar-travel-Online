@@ -1,0 +1,8 @@
+{
+  "name": "Barmawar Travel Online",
+  "description": "Online travel booking platform with AI multimodal voice assistant by Syed Abdul Munyeem Barmawar (Contact: 9731831122).",
+  "requestFramePermissions": ["microphone"],
+  "targetFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
